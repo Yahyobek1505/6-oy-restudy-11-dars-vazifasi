@@ -46,6 +46,7 @@ function PomodoroApp() {
   };
 function handleClick(e) {
   e.preventDefault();
+  setIsRunning(true);
   setMinutes(time.current.value);
   time.current.value = ""
 }
