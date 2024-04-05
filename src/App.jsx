@@ -66,8 +66,8 @@ function handleClick(e) {
         </form>
       </div>
         <h1 className="text-center text-4xl mt-8 mb-4 text-white">{isBreak ? "Break Time" : "Focus Time"}</h1>
-      <div className="w-[300px] h-[300px] rounded-[50%] mx-auto bg-slate-800 text-white mt-8">
-        <div className="text-center pt-24">
+      <div className="w-[250px] h-[250px] rounded-[50%] mx-auto bg-slate-800 text-white mt-6">
+        <div className="text-center pt-16">
           <h1 className="text-[64px]">
             {minutes < 10 ? `0${minutes}` : minutes}:
             {seconds < 10 ? `0${seconds}` : seconds}
@@ -76,7 +76,7 @@ function handleClick(e) {
       </div>
         <div className="text-center mt-4">
           {!isRunning ? (
-            <i onClick={startTimer} class="fa-regular fa-circle-play cursor-pointer text-white text-4xl bg-blue-900 rounded-md p-4"></i>
+            <i onClick={startTimer} class="fa-regular fa-circle-play cursor-pointer text-white text-4xl bg-blue-900 rounded-md p-2"></i>
           ) : (
             <i onClick={pauseTimer} class="fa-solid fa-pause cursor-pointer text-white text-4xl bg-blue-900 p-4 rounded-md"></i>
           )}
