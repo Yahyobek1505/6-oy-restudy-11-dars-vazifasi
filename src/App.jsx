@@ -30,15 +30,15 @@ function PomodoroApp() {
     return () => clearInterval(intervalId);
   }, [isRunning, seconds, minutes, isBreak]);
 
-  const startTimer = () => {
+  function startTimer () {
     setIsRunning(true);
   };
 
-  const pauseTimer = () => {
+  function pauseTimer () {
     setIsRunning(false);
   };
 
-  const resetTimer = () => {
+  function resetTimer () {
     setIsRunning(false);
     setIsBreak(false);
     setMinutes(25);
