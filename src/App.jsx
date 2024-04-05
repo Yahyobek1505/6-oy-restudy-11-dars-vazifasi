@@ -58,7 +58,7 @@ function handleClick(e) {
           <input
             ref={time}
             type="number"
-            className="outline-none h-16 w-96 text-2xl rounded-lg px-2"
+            className="outline-none h-16 w-72 ml-16 text-2xl rounded-lg px-2"
             placeholder="Enter time"
           />
           <button  className="bg-blue-900 rounded-md p-2 ml-2 text-white h-16 w-20 text-3xl">
